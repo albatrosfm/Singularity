@@ -21,19 +21,19 @@ export PYTHONPATH=/usr/share/pdb2pqr:
 ### install keras + tensorflow + other useful packages
 ###
 apt-get update
-apt-get install -y wget libhdf5-dev graphviz locales python3 python-pip git python-pandas
+apt-get install -y wget libhdf5-dev graphviz locales python3-dev python3-pip git python-pandas
 locale-gen en_US.UTF-8
 apt-get clean
 
-pip install --upgrade pip
-pip install tensorflow-gpu==1.3.0
-pip install keras==2.0.8
-pip install setuptools wheel Pillow scikit-learn matplotlib ipython==5.5.0
-pip install h5py
-pip install --upgrade notebook
-pip install cython
-pip install Biopython
-pip install six
+pip3 install --upgrade pip
+pip3 install tensorflow-gpu==1.4.0
+pip3 install keras==2.0.8
+pip3 install setuptools wheel Pillow scikit-learn matplotlib ipython==5.5.0
+pip3 install h5py
+pip3 install --upgrade notebook
+pip3 install cython
+pip3 install Biopython
+pip3 install six
 
 ###
 ### destination for NIH HPC bind mounts
